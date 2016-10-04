@@ -12,8 +12,9 @@
 #    $ cat ~/.pass.txt
 #    dbserver1 mysql root daPassVoid&
 #    webserver unix  root Th3B1gB055C4111ng
+#    dbserver2 mysql adm1 An0th3rp455w0rd_
 
-HOSTNAME="the.database.server.name"
+HOSTNAME="dbserver2"
 SERVICE="mysqld"
 USERNAME="root"
 PASSFILE="~/.pass.txt"
@@ -31,7 +32,7 @@ test -z "${PASSWORD}" && exit 1
 
 # Now we may login to the MySQL server without typing its password if granted to.
 
-mysql -u ${USERNAME} -p${PASSWORD} -h ${HOST} $*
+mysql -h ${HOSTNAME} -u ${USERNAME} -p${PASSWORD} $*
 
 # If all your scripts make it like this, you got a central password repo. 
 # Next time will cypher/decyper.
