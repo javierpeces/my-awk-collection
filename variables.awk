@@ -14,7 +14,7 @@
 #    webserver unix  root Th3B1gB055C4111ng
 
 HOSTNAME="the.database.server.name"
-SERVICE="mysql"
+SERVICE="mysqld"
 USERNAME="root"
 PASSFILE="~/.pass.txt"
 
@@ -37,5 +37,3 @@ mysql -u ${USERNAME} -p${PASSWORD} -h ${HOST} $*
 # Next time will cypher/decyper.
 
 # end of it all.
-
-
