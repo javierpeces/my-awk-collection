@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# my.sql -- sample database client connection
+
 # NO, this is not a panacea in terms of security.
 # But it helps when you have to publish scripts and 
 # want to ensure that no password is left inside.
