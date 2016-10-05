@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# environ
+# environ-usage
 #
 # sample environment vars usage
 #
