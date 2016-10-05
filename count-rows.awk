@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 
-# awk countrows
+# awk count-rows
 #
 # want to know how many inserts are into a mysql text dump file
 # if expected this...
